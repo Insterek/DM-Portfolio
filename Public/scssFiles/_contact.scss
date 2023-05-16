@@ -1,0 +1,154 @@
+@media (min-width: 0px) {
+  .contact {
+    width: 100%;
+    min-height: 100vh;
+    &__title {
+      @include title;
+      padding: 20px 0 20px 0;
+    }
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+      &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      &__direct {
+        align-self: 40%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .form-size {
+    width: 80vw;
+    padding: 6px 10px;
+    margin-top: 15px;
+  }
+  .form-size:focus {
+    outline: none;
+  }
+  .form-area {
+    height: 40vh;
+  }
+  .form-btn {
+    margin-top: 15px;
+    border: 2px solid whitesmoke;
+    background-color: #1a1a1a;
+    padding: 5px 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  .direct {
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: scale(1);
+    transition: 0.3s linear;
+  }
+  .direct-text {
+    font-size: 0.9rem;
+    flex-basis: 60%;
+    color: whitesmoke;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .direct-textP {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  .direct-img {
+    padding-right: 8px;
+  }
+}
+@media (min-width: 600px) and(orientation:portrait) {
+  .contact__title {
+    font-size: 3rem;
+  }
+  .contact__block__direct {
+    margin-top: 30px;
+    margin-left: 80px;
+  }
+  .form-area {
+    height: 20vh;
+  }
+  .form-size {
+    width: 60vw;
+    padding: 8px 15px;
+  }
+  .form-email,
+  .form-area,
+  .form-name {
+    font-size: 1.4rem;
+  }
+  .form-btn {
+    font-size: 1.8rem;
+  }
+  .direct-text,
+  .direct-textP {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 640px) and(orientation:landscape) {
+  .contact__block {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .form-size {
+    width: 40vw;
+  }
+  .form-area {
+    height: 50vh;
+  }
+}
+@media (min-width: 1024px) {
+  .contact__block__form {
+    margin-top: 40px;
+  }
+  .form-area {
+    height: 40vh;
+  }
+  .form-size {
+    width: 35vw;
+    padding: 8px 15px;
+  }
+  .form-email,
+  .form-area,
+  .form-name {
+    font-size: 1.2rem;
+  }
+  .form-btn {
+    cursor: pointer;
+    transition: 0.4s linear;
+    font-size: 1.4rem;
+  }
+  .form-btn:hover {
+    color: #1a1a1a;
+    background-color: whitesmoke;
+  }
+  .direct {
+    transform: scale(1);
+    transition: 0.4s linear;
+  }
+  .direct:hover {
+    transform: scale(1.05);
+  }
+  .direct-text,
+  .direct-textP {
+    font-size: 1.3rem;
+  }
+  .direct-text:hover,
+  .direct-textP:hover {
+    color: #ddd;
+  }
+}
