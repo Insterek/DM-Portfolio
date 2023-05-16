@@ -50,11 +50,14 @@ span {
     z-index: 3;
   }
   .navigation__bar__line {
+    margin-right: 7px;
     width: 35px;
     height: 5px;
     margin-bottom: 4px;
     border-radius: 20px;
     background-color: whitesmoke;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
   }
   .navigation__list {
     position: fixed;
@@ -77,8 +80,8 @@ span {
     height: 100vh;
     background-color: black;
     z-index: 2;
-    -webkit-transition: 0.2s linear;
-    transition: 0.2s linear;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
   }
   .navigation__list__links {
     list-style: none;
@@ -97,6 +100,22 @@ span {
     font-family: "Fraunces", serif;
     cursor: pointer;
     text-shadow: 4px 4px 6px black;
+  }
+  .moveon {
+    left: 0%;
+  }
+  .first {
+    -webkit-transform: rotate(45deg) translateX(12px);
+            transform: rotate(45deg) translateX(12px);
+  }
+  .second {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  .third {
+    -webkit-transform: rotate(-45deg) translate(13px);
+            transform: rotate(-45deg) translate(13px);
   }
 }
 

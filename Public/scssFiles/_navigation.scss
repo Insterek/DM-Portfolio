@@ -25,11 +25,13 @@
       margin-right: 0.6rem;
       z-index: 3;
       &__line {
+        margin-right: 7px;
         width: 35px;
         height: 5px;
         margin-bottom: 4px;
         border-radius: 20px;
         background-color: whitesmoke;
+        transition: 0.4s linear;
       }
     }
     &__list {
@@ -44,7 +46,7 @@
       height: 100vh;
       background-color: black;
       z-index: 2;
-      transition: 0.2s linear;
+      transition: 0.4s linear;
       &__links {
         list-style: none;
         margin-top: 15px;
@@ -62,6 +64,19 @@
     font-family: "Fraunces", serif;
     cursor: pointer;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+  }
+  .moveon {
+    left: 0%;
+  }
+  .first {
+    transform: rotate(45deg) translateX(12px);
+  }
+  .second {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  .third {
+    transform: rotate(-45deg) translate(13px);
   }
 }
 @media (min-width: 360px) {
