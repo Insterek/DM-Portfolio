@@ -6,3 +6,8 @@ links.forEach((item) => {
     burger();
   });
 });
+
+window.addEventListener("scroll", () => {
+  const navigation = document.querySelector(".open");
+  navigation.classList.toggle("scroll", scrollY > 150);
+});
