@@ -303,6 +303,7 @@ span {
     min-height: 80vh;
     background-color: #2c2c2f;
     padding: 20px;
+    position: relative;
   }
   .about__title {
     text-align: center;
@@ -332,7 +333,7 @@ span {
     font-size: 1.2rem;
     text-align: center;
     letter-spacing: 2px;
-    text-shadow: 0px 0px 2px black;
+    text-shadow: 3px 3px 5px black;
     font-style: italic;
   }
   .image-portfolio {
@@ -431,6 +432,7 @@ span {
     transition: 0.3s linear;
   }
   .box__title {
+    text-shadow: 4px 4px 6px black;
     font-weight: bold;
     padding-top: 8px;
     font-size: 1.2rem;
@@ -483,17 +485,164 @@ span {
     text-shadow: 4px 4px 6px black;
     padding: 20px 0 20px 0;
   }
-}
-
-@media (min-width: 600px) {
-  .projects__title {
-    font-size: 3rem;
+  .projects__container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects__container__project {
+    border: 4px solid rgba(0, 102, 31, 0.87);
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .project__info__tittle {
+    color: goldenrod;
+    padding-top: 5px;
+    text-align: center;
+    font-family: "Fraunces", serif;
+  }
+  .project__info__description {
+    text-shadow: 3px 3px 5px black;
+    padding-top: 5px;
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  .project__info__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 10px;
+  }
+  .project__info__button__live, .project__info__button__code {
+    cursor: pointer;
+    border: 2px solid whitesmoke;
+    text-decoration: none;
+    padding: 5px 18px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  .project__info__button__live:hover, .project__info__button__code:hover {
+    background-color: whitesmoke;
+    color: #1a1a1a;
+  }
+  .portfolio-big {
+    display: none;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 533px) {
+  .projects__title {
+    font-size: 3rem;
+  }
+  .projects__container__project {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .project__info {
+    padding-left: 25px;
+  }
+}
+
+@media (min-width: 700px) {
   .projects__title {
     font-size: 3.5rem;
+  }
+  .projects__container {
+    width: 90%;
+    margin: auto;
+  }
+  .project__info__tittle {
+    font-size: 1.9rem;
+  }
+  .project__info__description {
+    font-size: 0.9rem;
+  }
+  .project__info__button {
+    padding-top: 15px;
+  }
+  .project__info__button__live, .project__info__button__code {
+    padding: 5px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio__img-mobile {
+    display: none;
+  }
+  .portfolio-big {
+    display: block;
+  }
+  .projects__container {
+    width: 80%;
+  }
+  .projects__container__project {
+    border-radius: 20px;
+  }
+  .project__info {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project__info__tittle,
+  .project__info__description,
+  .project__info__ {
+    padding-bottom: 5%;
+  }
+  .project__info__description {
+    font-size: 1.1rem;
+  }
+  .project__info__tittle {
+    font-size: 2.2rem;
+  }
+  .project__info__button {
+    padding-top: 7px;
+  }
+  .project__info__button__live, .project__info__button__code {
+    font-size: 1.1rem;
   }
 }
 

@@ -7,15 +7,135 @@
       @include title;
       padding: 20px 0 20px 0;
     }
+    &__container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__project {
+        border: 4px solid rgba(0, 102, 31, 0.87);
+        padding: 10px;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .project__info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    &__tittle {
+      color: goldenrod;
+      padding-top: 5px;
+      text-align: center;
+      font-family: "Fraunces", serif;
+    }
+    &__description {
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+      padding-top: 5px;
+      color: whitesmoke;
+      text-align: justify;
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+    &__button {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 10px;
+      &__live,
+      &__code {
+        cursor: pointer;
+        border: 2px solid whitesmoke;
+        text-decoration: none;
+        padding: 5px 18px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: whitesmoke;
+      }
+      &__live:hover,
+      &__code:hover {
+        background-color: whitesmoke;
+        color: #1a1a1a;
+      }
+    }
+  }
+  .portfolio-big {
+    display: none;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 533px) {
   .projects__title {
     font-size: 3rem;
   }
+  .projects__container__project {
+    flex-direction: row;
+  }
+  .project__info {
+    padding-left: 25px;
+  }
 }
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   .projects__title {
     font-size: 3.5rem;
+  }
+  .projects__container {
+    width: 90%;
+    margin: auto;
+  }
+  .project__info__tittle {
+    font-size: 1.9rem;
+  }
+  .project__info__description {
+    font-size: 0.9rem;
+  }
+  .project__info__button {
+    padding-top: 15px;
+    &__live,
+    &__code {
+      padding: 5px 25px;
+      font-size: 0.9rem;
+    }
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio__img-mobile {
+    display: none;
+  }
+  .portfolio-big {
+    display: block;
+  }
+  .projects__container {
+    width: 80%;
+  }
+  .projects__container__project {
+    border-radius: 20px;
+  }
+  .project__info {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .project__info__tittle,
+  .project__info__description,
+  .project__info__ {
+    padding-bottom: 5%;
+  }
+  .project__info__description {
+    font-size: 1.1rem;
+  }
+  .project__info__tittle {
+    font-size: 2.2rem;
+  }
+  .project__info__button {
+    padding-top: 7px;
+    &__live,
+    &__code {
+      font-size: 1.1rem;
+    }
   }
 }
