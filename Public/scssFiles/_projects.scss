@@ -29,10 +29,8 @@
     flex-direction: column;
     width: 90%;
     &__tittle {
+      @include title;
       color: goldenrod;
-      padding-top: 5px;
-      text-align: center;
-      font-family: "Fraunces", serif;
     }
     &__description {
       text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
@@ -56,6 +54,7 @@
         font-size: 0.75rem;
         font-weight: bold;
         color: whitesmoke;
+        transition: 0.2s linear;
       }
       &__live:hover,
       &__code:hover {
@@ -87,6 +86,9 @@
     width: 90%;
     margin: auto;
   }
+  .projects__container__project {
+    border-radius: 20px;
+  }
   .project__info__tittle {
     font-size: 1.9rem;
   }
@@ -111,9 +113,6 @@
   }
   .projects__container {
     width: 80%;
-  }
-  .projects__container__project {
-    border-radius: 20px;
   }
   .project__info {
     width: 40%;

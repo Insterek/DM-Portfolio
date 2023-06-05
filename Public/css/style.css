@@ -527,10 +527,12 @@ span {
     width: 90%;
   }
   .project__info__tittle {
-    color: goldenrod;
-    padding-top: 5px;
     text-align: center;
-    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-shadow: 4px 4px 6px black;
+    color: goldenrod;
   }
   .project__info__description {
     text-shadow: 3px 3px 5px black;
@@ -560,6 +562,8 @@ span {
     font-size: 0.75rem;
     font-weight: bold;
     color: whitesmoke;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
   }
   .project__info__button__live:hover, .project__info__button__code:hover {
     background-color: whitesmoke;
@@ -593,6 +597,9 @@ span {
     width: 90%;
     margin: auto;
   }
+  .projects__container__project {
+    border-radius: 20px;
+  }
   .project__info__tittle {
     font-size: 1.9rem;
   }
@@ -617,9 +624,6 @@ span {
   }
   .projects__container {
     width: 80%;
-  }
-  .projects__container__project {
-    border-radius: 20px;
   }
   .project__info {
     width: 40%;
@@ -791,6 +795,9 @@ span {
 }
 
 @media (min-width: 640px) and (orientation: landscape) {
+  .contact__title {
+    font-size: 3.5rem;
+  }
   .contact__block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -826,8 +833,8 @@ span {
   }
   .form-btn {
     cursor: pointer;
-    -webkit-transition: 0.4s linear;
-    transition: 0.4s linear;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
     font-size: 1.4rem;
   }
   .form-btn:hover {
@@ -880,6 +887,85 @@ span {
 @media (min-width: 600px) {
   .footer {
     font-size: 1.3rem;
+  }
+}
+
+.move-left {
+  -webkit-animation: move-left 1.2s linear;
+          animation: move-left 1.2s linear;
+}
+
+.move-top {
+  -webkit-animation: move-top 1.2s linear;
+          animation: move-top 1.2s linear;
+}
+
+.visibility {
+  -webkit-animation: vision 2s linear;
+          animation: vision 2s linear;
+}
+
+@-webkit-keyframes move-left {
+  0% {
+    opacity: 0;
+    padding-left: 70%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes move-left {
+  0% {
+    opacity: 0;
+    padding-left: 70%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes move-top {
+  0% {
+    opacity: 0;
+    padding-top: 40%;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes move-top {
+  0% {
+    opacity: 0;
+    padding-top: 40%;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes vision {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes vision {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
