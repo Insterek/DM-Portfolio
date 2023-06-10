@@ -299,6 +299,7 @@ span {
 
 @media (min-width: 0px) {
   .about {
+    overflow: hidden;
     width: 100%;
     min-height: 80vh;
     background-color: #2c2c2f;
@@ -385,6 +386,7 @@ span {
 
 @media (min-width: 0px) {
   .skills {
+    overflow: hidden;
     width: 100%;
     min-height: 80vh;
   }
@@ -473,6 +475,7 @@ span {
 
 @media (min-width: 0px) {
   .projects {
+    overflow: hidden;
     width: 100%;
     min-height: 100vh;
     background-color: #2c2c2f;
@@ -652,6 +655,7 @@ span {
 
 @media (min-width: 0px) {
   .contact {
+    overflow: hidden;
     width: 100%;
     min-height: 100vh;
   }
@@ -895,20 +899,10 @@ span {
           animation: move-left 1.2s linear;
 }
 
-.move-top {
-  -webkit-animation: move-top 1.2s linear;
-          animation: move-top 1.2s linear;
-}
-
-.visibility {
-  -webkit-animation: vision 2s linear;
-          animation: vision 2s linear;
-}
-
 @-webkit-keyframes move-left {
   0% {
     opacity: 0;
-    padding-left: 70%;
+    margin-left: 100%;
   }
   100% {
     opacity: 1;
@@ -918,51 +912,7 @@ span {
 @keyframes move-left {
   0% {
     opacity: 0;
-    padding-left: 70%;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes move-top {
-  0% {
-    opacity: 0;
-    padding-top: 40%;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes move-top {
-  0% {
-    opacity: 0;
-    padding-top: 40%;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes vision {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes vision {
-  0% {
-    opacity: 0;
+    margin-left: 100%;
   }
   100% {
     opacity: 1;
