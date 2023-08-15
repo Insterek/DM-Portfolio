@@ -1,12 +1,13 @@
 .move-left {
-  animation: move-left 1.2s linear;
+  animation: move-left 1.2s both;
 }
 @keyframes move-left {
   0% {
     opacity: 0;
-    margin-left: 100%;
+    // margin-left: 100%;
   }
   100% {
+    margin-left: 0;
     opacity: 1;
   }
 }
