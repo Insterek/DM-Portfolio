@@ -21,24 +21,6 @@
     }
   }
 }
-@media (min-width: 600px) {
-  .main__container {
-    &__welcome,
-    &__description,
-    &__title {
-      font-size: 3.6rem;
-    }
-  }
-}
-@media (min-width: 640px) and(orientation:landscape) {
-  .main__container {
-    &__welcome,
-    &__description,
-    &__title {
-      font-size: 3rem;
-    }
-  }
-}
 @media (min-width: 1024px) {
   .main {
     background: rgba(0, 0, 0, 0.7) url("/public/images/imageSize/back2.jpg");
@@ -50,11 +32,6 @@
   .main__container {
     &__welcome {
       margin-top: 90px;
-    }
-    &__welcome,
-    &__description,
-    &__title {
-      font-size: 4rem;
     }
   }
 }

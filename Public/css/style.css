@@ -43,7 +43,7 @@ span {
   }
   .navigation__title {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: clamp(1.4rem, 5vw, 2.3rem);
     padding-left: 0.6rem;
     color: whitesmoke;
     font-family: "Fraunces", serif;
@@ -97,7 +97,7 @@ span {
     -webkit-transition: 0.4s linear;
     transition: 0.4s linear;
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -125,21 +125,12 @@ span {
   }
 }
 
-@media (min-width: 360px) {
-  .navigation__title {
-    font-size: 1.5rem;
-  }
-}
-
 @media (min-width: 520px) and (orientation: landscape) {
   .open {
     height: 15vh;
   }
   .navigation {
     height: 15vh;
-  }
-  .navigation__title {
-    padding-left: 1.2rem;
   }
   .navigation__bar {
     padding-right: 1.2rem;
@@ -148,8 +139,7 @@ span {
 
 @media (min-width: 600px) {
   .navigation__title {
-    font-size: 2.3rem;
-    padding-left: 1.2rem;
+    padding-left: 1.8rem;
   }
   .navigation__bar {
     padding-right: 1.2rem;
@@ -168,7 +158,7 @@ span {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 897px) {
   .open {
     height: 12vh;
   }
@@ -200,9 +190,6 @@ span {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
-  .links__button {
-    font-size: 1.2rem;
-  }
   .links__button::after {
     content: "";
     display: block;
@@ -218,20 +205,8 @@ span {
   .links__button:hover {
     color: #cc0000;
   }
-  .navigation__title {
-    font-size: 1.7rem;
-  }
   .navigation__bar {
     display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .navigation__title {
-    font-size: 2.3rem;
-  }
-  .links__button {
-    font-size: 1.5rem;
   }
 }
 
@@ -265,21 +240,9 @@ span {
     font-family: "Zilla Slab", serif;
     font-weight: bold;
     color: #dcdcdc;
-    font-size: 2rem;
+    font-size: clamp(2rem, 8vw, 3.6rem);
     padding-bottom: 15px;
     text-shadow: 4px 4px 6px black;
-  }
-}
-
-@media (min-width: 600px) {
-  .main__container__welcome, .main__container__description, .main__container__title {
-    font-size: 3.6rem;
-  }
-}
-
-@media (min-width: 640px) and (orientation: landscape) {
-  .main__container__welcome, .main__container__description, .main__container__title {
-    font-size: 3rem;
   }
 }
 
@@ -293,9 +256,6 @@ span {
   }
   .main__container__welcome {
     margin-top: 90px;
-  }
-  .main__container__welcome, .main__container__description, .main__container__title {
-    font-size: 4rem;
   }
 }
 
@@ -311,7 +271,7 @@ span {
   .about__title {
     margin-left: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
     text-transform: uppercase;
     color: whitesmoke;
     text-shadow: 4px 4px 6px black;
@@ -334,7 +294,7 @@ span {
   }
   .about__container__description {
     color: whitesmoke;
-    font-size: 1.2rem;
+    font-size: clamp(1.1rem, 6vw, 1.2rem);
     text-align: center;
     letter-spacing: 2px;
     text-shadow: 3px 3px 5px black;
@@ -346,25 +306,7 @@ span {
   }
 }
 
-@media (min-width: 600px) {
-  .about__title {
-    font-size: 3rem;
-  }
-  .about__container__description {
-    font-size: 1.8rem;
-  }
-}
-
-@media (min-width: 640px) and (orientation: landscape) {
-  .about__container__description {
-    font-size: 1.3rem;
-  }
-}
-
 @media (min-width: 800px) {
-  .about__title {
-    font-size: 3.5rem;
-  }
   .about__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -379,7 +321,6 @@ span {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     text-align: left;
-    font-size: 1.2rem;
   }
   .image-portfolio {
     width: 300px;
@@ -396,7 +337,7 @@ span {
   .skills__title {
     margin-left: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
     text-transform: uppercase;
     color: whitesmoke;
     text-shadow: 4px 4px 6px black;
@@ -451,9 +392,6 @@ span {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
   }
-  .skills__title {
-    font-size: 3rem;
-  }
 }
 
 @media (min-width: 600px) {
@@ -487,7 +425,7 @@ span {
   .projects__title {
     margin-left: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
     text-transform: uppercase;
     color: whitesmoke;
     text-shadow: 4px 4px 6px black;
@@ -541,19 +479,20 @@ span {
   .project__info__tittle {
     margin-left: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
     text-transform: uppercase;
     color: whitesmoke;
     text-shadow: 4px 4px 6px black;
+    font-size: clamp(1.7rem, 4vw, 2.2rem);
     margin-left: 0 !important;
     color: goldenrod;
   }
   .project__info__description {
     text-shadow: 3px 3px 5px black;
-    padding-top: 5px;
+    padding-top: 8px;
     color: whitesmoke;
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 4vw, 1rem);
     font-weight: 300;
   }
   .project__info__button {
@@ -589,36 +528,27 @@ span {
 }
 
 @media (min-width: 533px) {
-  .projects__title {
-    font-size: 3rem;
+  .project__info {
+    padding-left: 25px;
   }
+}
+
+@media (min-width: 560px) {
   .projects__container__project {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .project__info {
-    padding-left: 25px;
-  }
 }
 
 @media (min-width: 700px) {
-  .projects__title {
-    font-size: 3.5rem;
-  }
   .projects__container {
     width: 90%;
     margin: auto;
   }
   .projects__container__project {
     border-radius: 20px;
-  }
-  .project__info__tittle {
-    font-size: 1.9rem;
-  }
-  .project__info__description {
-    font-size: 0.9rem;
   }
   .project__info__button {
     padding-top: 15px;
@@ -655,15 +585,8 @@ span {
 
 @media (min-width: 1200px) {
   .project__info__tittle,
-  .project__info__description,
-  .project__info__ {
-    padding-bottom: 5%;
-  }
   .project__info__description {
-    font-size: 1.1rem;
-  }
-  .project__info__tittle {
-    font-size: 2.2rem;
+    padding-bottom: 5%;
   }
   .project__info__button {
     padding-top: 7px;
@@ -682,7 +605,7 @@ span {
   .contact__title {
     margin-left: 100%;
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(2rem, 4vw, 3.5rem);
     text-transform: uppercase;
     color: whitesmoke;
     text-shadow: 4px 4px 6px black;
@@ -820,9 +743,6 @@ span {
 }
 
 @media (min-width: 640px) and (orientation: landscape) {
-  .contact__title {
-    font-size: 3.5rem;
-  }
   .contact__block {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -841,9 +761,6 @@ span {
 }
 
 @media (min-width: 1024px) {
-  .contact__title {
-    font-size: 3.5rem;
-  }
   .form-area {
     height: 40vh;
   }

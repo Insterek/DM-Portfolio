@@ -2,14 +2,14 @@
   font-family: "Zilla Slab", serif;
   font-weight: bold;
   color: #dcdcdc;
-  font-size: 2rem;
+  font-size: clamp(2rem, 8vw, 3.6rem);
   padding-bottom: 15px;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
 }
 @mixin title {
   margin-left: 100%;
   text-align: center;
-  font-size: 2rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
   text-transform: uppercase;
   color: whitesmoke;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);

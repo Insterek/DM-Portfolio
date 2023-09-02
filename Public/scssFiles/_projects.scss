@@ -32,15 +32,16 @@
     width: 90%;
     &__tittle {
       @include title;
+      font-size: clamp(1.7rem, 4vw, 2.2rem);
       margin-left: 0 !important;
       color: goldenrod;
     }
     &__description {
       text-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
-      padding-top: 5px;
+      padding-top: 8px;
       color: whitesmoke;
       text-align: justify;
-      font-size: 0.8rem;
+      font-size: clamp(0.8rem, 4vw, 1rem);
       font-weight: 300;
     }
     &__button {
@@ -71,32 +72,22 @@
   }
 }
 @media (min-width: 533px) {
-  .projects__title {
-    font-size: 3rem;
-  }
-  .projects__container__project {
-    flex-direction: row;
-  }
   .project__info {
     padding-left: 25px;
   }
 }
-@media (min-width: 700px) {
-  .projects__title {
-    font-size: 3.5rem;
+@media (min-width: 560px) {
+  .projects__container__project {
+    flex-direction: row;
   }
+}
+@media (min-width: 700px) {
   .projects__container {
     width: 90%;
     margin: auto;
   }
   .projects__container__project {
     border-radius: 20px;
-  }
-  .project__info__tittle {
-    font-size: 1.9rem;
-  }
-  .project__info__description {
-    font-size: 0.9rem;
   }
   .project__info__button {
     padding-top: 15px;
@@ -127,15 +118,8 @@
 }
 @media (min-width: 1200px) {
   .project__info__tittle,
-  .project__info__description,
-  .project__info__ {
-    padding-bottom: 5%;
-  }
   .project__info__description {
-    font-size: 1.1rem;
-  }
-  .project__info__tittle {
-    font-size: 2.2rem;
+    padding-bottom: 5%;
   }
   .project__info__button {
     padding-top: 7px;
